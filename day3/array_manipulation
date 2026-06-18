@@ -1,0 +1,33 @@
+import numpy as np 
+#problem 1
+arr=np.arange(10,22)
+print(arr) 
+# [10 11 12 13 14 15 16 17 18 19 20 21]
+
+print("size:", arr.size)
+# size: 12
+print ("data type:", arr.dtype)
+# data type: int64 
+
+#problem 
+matrix =arr.reshape(3,4)
+print("\n 3*4 matrix:\n",matrix)
+print(matrix)
+# [[10 11 12 13]
+#  [14 15 16 17]
+#  [18 19 20 21]]
+#[[10 11 12 13]
+#  [14 15 16 17]
+#  [18 19 20 21]]
+print ("\nfirst row:", matrix[0])
+# first row: [10 11 12 13]
+print ("\nlast two columns :\n", matrix[:,2:])
+# last two columns :
+# [[12 13]
+#  [16 17]
+#  [20 21]]
+
+# problem 3
+flat_array =matrix.flatten()
+print("\nflattened array:", flat_array)
+# flattened array: [10 11 12 13 14 15 16 17 18 19 20 21]
