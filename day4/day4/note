@@ -1,0 +1,30 @@
+#day 4
+#element wise operation 
+numpy performs airthmetic operation 
+add
+substract
+multiply
+divide
+
+### broadcasting 
+allows numpy tp perform operations betweenn arrays of different shapes
+###universal function (ufunc)
+built in functions 
+np.sum()
+np.mean()
+np.max()
+np.min()
+np.sqrt()
+np.sin()
+np.exp()
+makes calculation faster and more efficient 
+### boolean indexing
+arr>25
+this will return values greate rthan 25
+
+
+#observation 
+numpy mathematical operations 
+#explore
+more numpy mathematical operations 
+array reshaping 
