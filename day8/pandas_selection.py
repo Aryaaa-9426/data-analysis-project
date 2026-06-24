@@ -42,3 +42,15 @@ print (df[df["math_score"]> 80])
 print ("\n4. students with math > 75 AND science >75:")
 print(df[(df["math_score"]>75)
 & (df["science_score"]>75)])
+"""3. student with math score > 80;
+      name  math_score  science_score
+0    alice          85             92
+2  charlie          90             88
+4      eva          95             98
+
+4. students with math > 75 AND science >75:
+      name  math_score  science_score
+0    alice          85             92
+2  charlie          90             88
+4      eva          95             98
+"""
