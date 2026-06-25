@@ -30,4 +30,26 @@ science_mean =df["science"].mean()
 df["science"]=df["science"].fillna(science_mean)
 
 print("\nCleaned Dataframe")
-print(df)
+print(df) 
+
+
+"""original DataFrame
+    name  math  science
+0  arya   85.0     90.0
+1   riya   NaN     88.0
+2    NaN  78.0      NaN
+3   aman  92.0     95.0
+4   neha   NaN     80.0
+
+ missing values in each column;
+name       1
+math       2
+science    1
+dtype: int64
+
+Cleaned Dataframe
+    name  math  science
+0  arya   85.0     90.0
+1   riya  88.5     88.0
+3   aman  92.0     95.0
+4   neha  88.5     80.0 """
