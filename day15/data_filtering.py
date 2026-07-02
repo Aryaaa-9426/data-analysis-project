@@ -35,3 +35,11 @@ print(high_performers)
 #grouping the data by department and calculating the average salary
 summary = df.groupby("department").agg(total_staff=("Employee_ID", "count"), average_score=("performance_score", "mean"))
 print(summary)
+
+'''             total_staff  average_score
+department                            
+Finance               1       5.000000
+HR                    2       2.500000
+IT                    3       4.333333
+'''
+
