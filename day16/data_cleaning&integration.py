@@ -54,3 +54,48 @@ employee = {
 
 emp_df = pd.DataFrame(employee)
 print(emp_df)
+
+''' Emp_ID   Name Department
+0       1  Aryan         HR
+1       2   Neha      Sales
+2       3  Rohit         IT
+3       4  Priya    Finance
+4       5   Aman      Sales ''' 
+
+performance = {
+    "Emp_ID": [1, 2, 4],
+    "Sales_Closed": [15, 22, 10],
+    "Satisfaction_Score": [4.5, 4.8, 4.2]
+}
+
+perf_df = pd.DataFrame(performance)
+print(perf_df)
+''' Emp_ID  Sales_Closed  Satisfaction_Score
+0       1            15                 4.5
+1       2            22                 4.8
+2       4            10                 4.2 '''
+
+merged_df = pd.merge(
+    emp_df,
+    perf_df,
+    on="Emp_ID",
+    how="left"
+)
+
+print(merged_df)
+
+''' Emp_ID   Name Department  Sales_Closed  Satisfaction_Score
+0       1  Aryan         HR          15.0                 4.5
+1       2   Neha      Sales          22.0                 4.8
+2       3  Rohit         IT           NaN                 NaN
+3       4  Priya    Finance          10.0                 4.2
+4       5   Aman      Sales           NaN                 NaN '''
+
+print(
+    merged_df[merged_df["Sales_Closed"].isna()]
+)
+
+merged_df["Sales_Closed"] = merged_df["Sales_Closed"].fillna(0)
+
+print(merged_df) 
+

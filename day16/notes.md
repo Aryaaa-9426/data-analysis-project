@@ -10,4 +10,4 @@
 | `how="left"`           | Keep all rows from the left DataFrame                     |
 | `how="right"`          | Keep all rows from the right DataFrame                    |
 | `how="inner"`          | Keep only matching rows                                   |
-| `how="outer"`          | Keep all rows from both DataFrames                        |
+| `how="outer"`          | Keep all rows from both DataFrames                        
